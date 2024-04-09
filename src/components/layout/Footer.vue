@@ -1,5 +1,5 @@
 <template>
-	<footer>
+	<footer style="position: fixed; bottom: 0;">
 		<div>
 			<p>
 				<strong>Lancer Briefings</strong> by
@@ -8,15 +8,3 @@
 		</div>
 	</footer>
 </template>
-
-<script>
-
-
-export default {
-  components: {
-  }
-}
-</script>
-
-<style lang="scss" scoped>
-</style>

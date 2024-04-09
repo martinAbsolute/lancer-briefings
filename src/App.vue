@@ -1,7 +1,7 @@
 <template>
   <Header :header="this.header" />
   <div class="content-container">
-    <section class="section-container" id="missions" style="min-width:435px; max-width: 435px; height:714px;">
+    <section class="section-container" id="missions">
       <div class="section-header clipped-medium-backward">
         <img src="/icons/mission-icon.svg" />
         <h1>Mission Log</h1>
@@ -21,7 +21,7 @@
         </div>
       </div>
     </section>
-    <section class="section-container" id="events" style="min-width:435px; max-width: 435px; height:714px;">
+    <section class="section-container" id="events">
       <div class="section-header clipped-medium-backward">
         <img src="/icons/events-icon.svg" />
         <h1>Events Log</h1>
@@ -30,8 +30,8 @@
         <Markdown :source="events" class="markdown" />
       </div>
     </section>
-    <section class="section-container" id="pilots" style="height:714px; max-width: 800px; flex-grow: 1;">
-      <div style="height:52px; overflow:hidden;">
+    <section class="section-container" id="pilots" style="min-width: 752px">
+      <div style="height: 52px; overflow: hidden">
         <div class="section-header clipped-medium-backward-pilot">
           <img src="/icons/pilot-icon.svg" />
           <h1>Pilot Roster</h1>
@@ -39,14 +39,12 @@
         <div class="rhombus-back">&nbsp;</div>
       </div>
       <div class="section-content-container">
-        <div class="pilot-list-container">
-          <Pilot v-for="item in this.pilots" :key="item.slug" :pilot="item" />
-        </div>
+        <Pilot v-for="item in this.pilots" :key="item.slug" :pilot="item" />
       </div>
     </section>
   </div>
   <svg
-    style="visibility: hidden; position: absolute;"
+    style="visibility: hidden; position: absolute"
     width="0"
     height="0"
     xmlns="http://www.w3.org/2000/svg"
@@ -68,15 +66,15 @@
   <audio autoplay>
     <source src="/startup.ogg" type="audio/ogg" />
   </audio>
-  <Footer/>
+  <Footer />
 </template>
 
 <script>
-import Header from './components/layout/Header.vue';
-import Footer from './components/layout/Footer.vue';
-import Mission from './components/Mission.vue';
-import Pilot from './components/Pilot.vue';
-import Markdown from 'vue3-markdown-it';
+import Header from "./components/layout/Header.vue";
+import Footer from "./components/layout/Footer.vue";
+import Mission from "./components/Mission.vue";
+import Pilot from "./components/Pilot.vue";
+import Markdown from "vue3-markdown-it";
 
 export default {
   components: {
@@ -84,114 +82,109 @@ export default {
     Footer,
     Mission,
     Pilot,
-    Markdown
+    Markdown,
   },
 
   data() {
     return {
-      "mission_slug": "001",
-      "current_md": "",
-      "events": "",
-      "missions": [
+      mission_slug: "001",
+      current_md: "",
+      events: "",
+      missions: [
         {
-          "slug": "001",
-          "name": "Bug-Hunt",
-          "status": "start"
+          slug: "001",
+          name: "Danish Gambit",
+          status: "start",
         },
       ],
-      "pilots": [
+      pilots: [
         {
-          "callsign": "Flatline",
-          "alias": "Vier Flau",
-          "code": "7cd700cc-c990-48ed-892f-e5468de724c4///NDL-C-DEEP-STATION//a98c3e28-ad4a-4f89-bcd9-501464e960da",
-          "corpro": "GMS",
-          "frame": "Everest",
-          "mech": "Scarlet Judicator"
+          callsign: "Flatline",
+          alias: "Vier Flau",
+          code: "7cd700cc-c990-48ed-892f-e5468de724c4///NDL-C-DEEP-STATION//a98c3e28-ad4a-4f89-bcd9-501464e960da",
+          corpro: "GMS",
+          frame: "Everest",
+          mech: "Scarlet Judicator",
         },
         {
-          "callsign": "Harbinger",
-          "alias": "Maria",
-          "code": "4be26ce9-923b-4069-b6c9-76437d4be455///NDL-C-DEEP-STATION//056940c6-8d55-4190-8e85-57caa043cb1a",
-          "corpro": "GMS",
-          "frame": "Everest",
-          "mech": "Mayfly"
+          callsign: "Harbinger",
+          alias: "Maria",
+          code: "4be26ce9-923b-4069-b6c9-76437d4be455///NDL-C-DEEP-STATION//056940c6-8d55-4190-8e85-57caa043cb1a",
+          corpro: "GMS",
+          frame: "Everest",
+          mech: "Mayfly",
         },
         {
-          "callsign": "Siren",
-          "alias": "Marlene Gatsby",
-          "code": "98ca9616-044e-4f87-b89b-aae4eb3387ec///NDL-C-DEEP-STATION//6f572259-6946-41bf-931a-e0543709e892",
-          "corpro": "GMS",
-          "frame": "Everest",
-          "mech": "Necrophile"
+          callsign: "Siren",
+          alias: "Marlene Gatsby",
+          code: "98ca9616-044e-4f87-b89b-aae4eb3387ec///NDL-C-DEEP-STATION//6f572259-6946-41bf-931a-e0543709e892",
+          corpro: "GMS",
+          frame: "Everest",
+          mech: "Necrophile",
         },
       ],
-      "header": {
-        "planet": "Ganymede",
-        "year": "5014u",
-        "system": "LL-34-G",
-        "gate": "Atlas-Quanokrim",
-        "ring": "Atlas-Line",
-        "headerTitle": "Full Metal Jacket",
-        "headerSubtitle": "Mining Company",
-        "subheaderTitle": "Liberation Front",
-        "subheaderSubtitle": "Alpha-Zero-Zero-One",
+      header: {
+        planet: "Ganymede Mining Colony",
+        year: "5014u",
+        system: "LL-34-G",
+        gate: "Atlas-Quanokrim",
+        ring: "Atlas-Line",
+        headerTitle: "Full Metal Jacket",
+        headerSubtitle: "Mining Company",
+        subheaderTitle: "Liberation Front",
+        subheaderSubtitle: "Alpha-Zero-Zero-One",
       },
-      "options":{
-        "eventsMarkdownPerMission": true
-      }
-    }
+      options: {
+        eventsMarkdownPerMission: true,
+      },
+    };
   },
 
   created() {
-    this.loadMissionMarkdown()
-    this.loadEventsMarkdown()
+    this.loadMissionMarkdown();
+    this.loadEventsMarkdown();
   },
 
-  computed: {
-
-  },
+  computed: {},
 
   methods: {
     selectMission(mission) {
       this.mission_slug = mission.slug;
-      this.loadMissionMarkdown()
-      if(this.options.eventsMarkdownPerMission){
+      this.loadMissionMarkdown();
+      if (this.options.eventsMarkdownPerMission) {
         this.loadEventsMarkdown();
       }
     },
     loadMissionMarkdown() {
       let self = this;
-      let md = `/missions/${self.mission_slug}.md`
+      let md = `/missions/${self.mission_slug}.md`;
       var client = new XMLHttpRequest();
-      client.open('GET', md);
+      client.open("GET", md);
       client.onreadystatechange = function () {
         self.current_md = client.responseText;
-      }
+      };
       client.send();
     },
     loadEventsMarkdown() {
       let self = this;
       let md = "";
 
-      if(self.options.eventsMarkdownPerMission){
-        md = `/events/${self.mission_slug}.md`
-      }
-      else {
-        md = "/events.md"
+      if (self.options.eventsMarkdownPerMission) {
+        md = `/events/${self.mission_slug}.md`;
+      } else {
+        md = "/events.md";
       }
 
       var client = new XMLHttpRequest();
-      client.open('GET', md);
+      client.open("GET", md);
       client.onreadystatechange = function () {
         self.events = client.responseText;
-      }
+      };
       client.send();
-    }
-  }
-
-}
+    },
+  },
+};
 </script>
-
 
 <style lang="scss">
 #app {

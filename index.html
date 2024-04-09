@@ -1,40 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/icons/company-icon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://lancer.kuenaimaku.com/" />
+    <meta property="og:title" content="FMJ-MC Mission Briefing" />
+    <meta
+      property="og:description"
+      content="MIRRORSMOKE MERCENARY COMPANY | MISSION BRIEFING"
+    />
+    <meta property="og:image" content="/icons/company-icon.svg" />
+    <title>FMJ-MC | MISSION BRIEFING</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" href="/icons/company-icon.svg">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://lancer.kuenaimaku.com/">
-  <meta property="og:title" content="FMJ-MC Mission Briefing">
-  <meta property="og:description" content="MIRRORSMOKE MERCENARY COMPANY | MISSION BRIEFING">
-  <meta property="og:image" content="/icons/company-icon.svg">
-  <title>FMJ-MC | MISSION BRIEFING</title>
-</head>
-
-<body style="margin:0px;">
-  <div id="app"></div>
-  <script type="module" src="/src/main.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.21/dist/vanta.waves.min.js"></script>
-  <script>
-    setTimeout(() => {
+  <body style="margin: 0px">
+    <div id="app"></div>
+    <div class="venta-fullscreen-bg"></div>
+    <script type="module" src="/src/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.21/dist/vanta.waves.min.js"></script>
+    <style type="text/css">
+      .venta-fullscreen-bg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+      }
+    </style>
+    <script>
       VANTA.WAVES({
-        el: "body",
+        el: ".venta-fullscreen-bg",
         mouseControls: true,
         touchControls: true,
         gyroControls: false,
-        scale: 1.00,
-        scaleMobile: 1.00,
+        scale: 1.0,
+        scaleMobile: 1.0,
         color: 0x000000,
-        shininess: 10.00,
-        waveHeight: 40.00,
-        waveSpeed: 0.10,
-        zoom: 0.65
-      })
-    }, 100);
-  </script>
-</body>
-
+        shininess: 10.0,
+        waveHeight: 40.0,
+        waveSpeed: 0.1,
+        zoom: 0.65,
+      });
+    </script>
+  </body>
 </html>
