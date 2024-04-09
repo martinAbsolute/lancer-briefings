@@ -5,8 +5,8 @@
 /*-------------------------------------*/
 
 //Primary Colors
-$primary: rgba(125, 187, 187, 1);
-$secondary: rgba(23, 29, 30, 0.8);
+$primary: #EC9C04;
+$secondary: #1E2328;
 $highlight-hover: rgba(255, 255, 255, 0.3);
 $highlight-active: rgba(255, 255, 255, 0.1);
 
@@ -88,14 +88,17 @@ $text-markdown-h2: rgba(255, 255, 255, 0.87);
 }
 
 :root {
+  height: 100%;
   background-color: $secondary;
 }
 
 body {
+  height: 100%;
   overflow: hidden !important;
 }
 
 header {
+  max-width: 1902px;
   animation: 1s ease-out 1 slideInFromLeft;
   background-color: $secondary;
   border-color: $secondary;
@@ -290,6 +293,7 @@ div.location-info {
 }
 
 div .content-container {
+  width: 100%;
   display: flex;
   flex-direction: row;
 }
