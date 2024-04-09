@@ -204,7 +204,7 @@ header {
   top: -30px;
 }
 
-header img {
+header .planet-img {
   margin-left: 3.5%;
   width: 86px;
   height: 86px;
@@ -212,7 +212,7 @@ header img {
 
 div .location-info {
   height: 90px;
-  width: 550px;
+  width: 500px;
   padding: 10px;
   margin-left: 16px;
   justify-content: center;
@@ -221,7 +221,7 @@ div .location-info {
   color: $text-location;
 }
 
-header img,
+header .planet-img,
 div.location-info {
   animation: 0.5s ease 1 flickerIn;
   animation-delay: 2s;
@@ -832,4 +832,26 @@ div.markdown {
   padding-top: 1em;
   padding-bottom: 1em;
   border-bottom: none;
+}
+
+.deploy-button {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  background-color: $primary;
+  border-color: $primary;
+  color: black;
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 16px;
+  padding: 0.5em;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+
+  &:hover {
+    background-color: $highlight-hover;
+  }
 }

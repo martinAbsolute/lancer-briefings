@@ -14,7 +14,13 @@
       </div>
     </div>
     <div class="rhombus">&nbsp;</div>
-    <img class="planet" src="/planet.gif" style="margin-left: 64px;" width="80" height="80" />
+    <img
+      class="planet-img"
+      src="/planet.gif"
+      style="margin-left: 64px"
+      width="80"
+      height="80"
+    />
     <div class="location-info">
       <div class="location-row" id="planet-year">
         <div id="planet">
@@ -41,23 +47,28 @@
         </div>
       </div>
     </div>
+    <a href="/foundry" class="deploy-button">
+      Foundry
+      <img
+        src="/icons/d20.svg"
+        style="margin-left: 4px"
+        height="16"
+        width="16"
+      />
+    </a>
   </header>
 </template>
 
 <script>
-
-
 export default {
-  components: {
-  },
+  components: {},
   props: {
     header: {
       type: Object,
       required: true,
-    }
-  }
-}
+    },
+  },
+};
 </script>
 
-<style lang="scss" scoped>
-</style>
+<style lang="scss" scoped></style>
