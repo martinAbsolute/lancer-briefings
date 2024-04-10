@@ -30,7 +30,7 @@
         <Markdown :source="events" class="markdown" />
       </div>
     </section>
-    <section class="section-container" id="pilots" style="min-width: 752px">
+    <section class="section-container" id="pilots" style="min-width: 720px">
       <div style="height: 52px; overflow: hidden">
         <div class="section-header clipped-medium-backward-pilot">
           <img src="/icons/pilot-icon.svg" />
@@ -99,28 +99,20 @@ export default {
       ],
       pilots: [
         {
-          callsign: "Flatline",
-          alias: "Vier Flau",
-          code: "7cd700cc-c990-48ed-892f-e5468de724c4///NDL-C-DEEP-STATION//a98c3e28-ad4a-4f89-bcd9-501464e960da",
-          corpro: "GMS",
-          frame: "Everest",
-          mech: "Scarlet Judicator",
+          callsign: "H.A.C-K",
+          alias: "Robert",
+          code: "731b67c5-8484-42aa-8d27-ce0b29dac7bb//NDL-C-SOLAR-CLOSE",
+          corpro: "HORUS",
+          frame: "Goblin",
+          mech: "G-0-0-BL-1-N",
         },
         {
-          callsign: "Harbinger",
-          alias: "Maria",
-          code: "4be26ce9-923b-4069-b6c9-76437d4be455///NDL-C-DEEP-STATION//056940c6-8d55-4190-8e85-57caa043cb1a",
-          corpro: "GMS",
-          frame: "Everest",
-          mech: "Mayfly",
-        },
-        {
-          callsign: "Siren",
-          alias: "Marlene Gatsby",
-          code: "98ca9616-044e-4f87-b89b-aae4eb3387ec///NDL-C-DEEP-STATION//6f572259-6946-41bf-931a-e0543709e892",
-          corpro: "GMS",
-          frame: "Everest",
-          mech: "Necrophile",
+          callsign: "RED SKY",
+          alias: "Frederick Valasky",
+          code: "e25d6fcf-75b0-4504-add5-443b792668a7//NDL-C-DELTA-CRYSTAL",
+          corpro: "IPS-N",
+          frame: "TORTUGA",
+          mech: "SKYFALL",
         },
       ],
       header: {
