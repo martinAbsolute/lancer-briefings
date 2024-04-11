@@ -120,7 +120,7 @@ export default {
           code: "61493929-34f4-4d69-b1db-d8d3445580f7//NDL-C-RAW-ORCHID",
           corpro: "SSC",
           frame: "BLACK WITCH",
-          mech: "BLACK WITCH",
+          mech: "JŪRYOKU",
         },
         {
           callsign: "GOLDEN LOTUS",
