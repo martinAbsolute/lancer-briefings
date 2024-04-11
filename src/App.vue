@@ -110,9 +110,9 @@ export default {
           callsign: "RED SKY",
           alias: "Frederick Valasky",
           code: "e25d6fcf-75b0-4504-add5-443b792668a7//NDL-C-DELTA-CRYSTAL",
-          corpro: "IPS-N",
-          frame: "TORTUGA",
-          mech: "SKYFALL",
+          corpro: "HARRISON ARMORY",
+          frame: "GENGHIS",
+          mech: "HELLHOUND",
         },
       ],
       header: {
