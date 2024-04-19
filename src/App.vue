@@ -120,15 +120,15 @@ export default {
           code: "61493929-34f4-4d69-b1db-d8d3445580f7//NDL-C-RAW-ORCHID",
           corpro: "SSC",
           frame: "BLACK WITCH",
-          mech: "BLACK WITCH",
+          mech: "JŪRYOKU",
         },
         {
           callsign: "GOLDEN LOTUS",
           alias: "Markon",
           code: "7c577ba6-eb4a-4d7a-bf31-f8ecef408820//NDL-C-SIGMA-SKULL",
           corpro: "SSC",
-          frame: "STANDING HERE I REALISE",
-          mech: "ATLAS",
+          frame: "ATLAS",
+          mech: "STANDING HERE I REALISE",
         },
       ],
       header: {

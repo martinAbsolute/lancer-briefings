@@ -1,1 +1,12 @@
-[DOSSIER MISSING]
+### Bio
+
+**Profession:** Former software engineer, now a mecha-hacker pilot
+**Interests:** Surfing MetaHook (an internet analog), participating in forums
+
+Roert was sent to Ganymede as a specialist in software development for controlling heavy machinery—from lathes to smelters and drilling rigs. His work not only required deep technical knowledge but also gave him a unique understanding of complex control systems, which would later play a key role in his life. With the onset of Ganymede's capture, Roert, seeing that the mechs operated on the same code base as the machinery he was familiar with, decided to join the resistance. In the group, he took on the role of a technician, repairing and configuring the resistance's mechs, although he did not participate in field tasks himself.
+
+After the suppression of the resistance, Roert decided to lay low, keeping his skills secret from the new authorities. During this time, he continued to monitor the situation, using his skills in MetaHook to gather information and stay informed. When the beginnings of a new revolutionary force started to form, Roert saw an opportunity to rejoin the fight. He returned to his former role, which he had during the resistance.
+
+During the technical setup of a mech, Roert discovers that his tablet activates on its own and displays the message: "Your talents are too significant for mere conventional roles. Engage with the deeper currents of possibility – HORUS has observed, and offers you the keys to unlock unprecedented potential." Following this, licenses and blueprints for the unique Goblin model mech from Horus are downloaded onto the device. Realizing that his tablet had been hacked, Roert understands that his skills and talents had not gone unnoticed. This opens up the opportunity for him to use the mech with the innovative INSTINCT RIG system, which allows invasions into enemy systems, experiencing them as a battle with organic matter.
+
+When Roert encounters the INSTINCT RIG system in the Goblin model mech, he is captivated by the uniqueness of the integration of the pilot's intellect and the mechanical system. This concept seems revolutionary to him, as he had not encountered such an innovative solution before. The genius of this technology, which allows the mech to anticipate and adapt to the pilot's actions, astonishes him and motivates him to actively use the Goblin in field tasks.
