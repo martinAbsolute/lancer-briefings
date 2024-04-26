@@ -87,14 +87,19 @@ export default {
 
   data() {
     return {
-      mission_slug: "001",
+      mission_slug: "002",
       current_md: "",
       events: "",
       missions: [
         {
+          slug: "002",
+          name: "Hyper Accelerated Dragon",
+          status: "start",
+        },
+        {
           slug: "001",
           name: "Danish Gambit",
-          status: "start",
+          status: "success",
         },
       ],
       pilots: [
